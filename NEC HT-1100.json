@@ -1,0 +1,3532 @@
+[
+    {
+        "id": "cb95f56d5a0ad2b7",
+        "type": "tab",
+        "label": "NEC HT1100",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b7c3fd6494edd82d",
+        "type": "group",
+        "z": "cb95f56d5a0ad2b7",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5709afc4679c64f2",
+            "93ddb648e3518701",
+            "c3627ba34f712854",
+            "3c2b8f1e2bab10ca",
+            "eb75228dfccd9f19",
+            "2589666f18fc4ace",
+            "f97863f660e0c19b",
+            "45196c3a46246e5f"
+        ],
+        "x": 668,
+        "y": 1039,
+        "w": 624,
+        "h": 888
+    },
+    {
+        "id": "2589666f18fc4ace",
+        "type": "group",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "88426c38250a1f7c",
+            "63aa1e2dd7ee492a",
+            "7092467f0c0b4e75",
+            "ab24b89d0bf226c2",
+            "27e0059c4383b213",
+            "b390841b8b218963",
+            "216a1968e8861953",
+            "295575193e5c21bb",
+            "dda5bd36615aba10",
+            "7349e181d95d1d84",
+            "3404896df81586db"
+        ],
+        "x": 694,
+        "y": 1639,
+        "w": 572,
+        "h": 262
+    },
+    {
+        "id": "f97863f660e0c19b",
+        "type": "group",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6c77a21b46fb2286",
+            "c5b7e44d345f139d",
+            "67a4599a66d29e33",
+            "f7a1f4a89a34a9e9",
+            "3204eee1be19d9d0"
+        ],
+        "x": 694,
+        "y": 1199,
+        "w": 572,
+        "h": 142
+    },
+    {
+        "id": "45196c3a46246e5f",
+        "type": "group",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1ee937940eae8e4a",
+            "2f129524c18a3e5a",
+            "2d4c234fbbff4737",
+            "c236761382a99dff",
+            "96d256cc3eefada0",
+            "608ed2cc7a961685",
+            "991958bea24afce2"
+        ],
+        "x": 754,
+        "y": 1359,
+        "w": 452,
+        "h": 242
+    },
+    {
+        "id": "dd31a37af9a47c09",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037. Information Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "038a000000",
+        "payloadType": "str",
+        "x": 170,
+        "y": 840,
+        "wires": [
+            [
+                "4bf9ed26a186c40c"
+            ]
+        ],
+        "icon": "font-awesome/fa-info-circle"
+    },
+    {
+        "id": "8a4dde826f60f7ba",
+        "type": "comment",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100",
+        "info": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ad5da61150e6cb1d",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "015 . Power ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0200000000",
+        "payloadType": "str",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "a6a54c59ba63d4d7"
+            ]
+        ],
+        "icon": "font-awesome/fa-toggle-on"
+    },
+    {
+        "id": "911ed5eb11fbcbb1",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "016 . Power OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0201000000",
+        "payloadType": "str",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "c7fa966e34b61b27"
+            ]
+        ],
+        "icon": "font-awesome/fa-toggle-off"
+    },
+    {
+        "id": "667ebdaa3cd8010a",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "018. INPUT: DVI",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0203000002011a",
+        "payloadType": "str",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "ac86a445b9b40a2e"
+            ]
+        ],
+        "icon": "font-awesome/fa-sign-in"
+    },
+    {
+        "id": "d60a891e27fbadf5",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-2 Running Status",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "008500000101",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1440,
+        "wires": [
+            [
+                "931c4b2cbcdab18f"
+            ]
+        ],
+        "icon": "font-awesome/fa-heartbeat"
+    },
+    {
+        "id": "fb30e1d26606afa1",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-3. Input Status",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "008500000102",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1480,
+        "wires": [
+            [
+                "89ba19aabeb628cb"
+            ]
+        ]
+    },
+    {
+        "id": "52aab9bea62607c4",
+        "type": "function",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HEX to BINARY + Checksum",
+        "func": "let cks = 0;\nlet buffer = Buffer.from(msg.payload,'hex');\n\nfor (let i = 0; i < buffer.length; i++) {\n    cks += buffer[i];\n  }\n  \nlet checksum = Buffer.alloc(1);\nchecksum[0] = cks % 256;\n\nmsg.payload = Buffer.concat([buffer,checksum]);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "fcc4f34e0ae5a88a",
+                "28153472e3cb9acb"
+            ]
+        ]
+    },
+    {
+        "id": "fcc4f34e0ae5a88a",
+        "type": "debug",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "SEND to HT1100",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a3f5f8e337f38b86",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "018. INPUT: RGB/PC",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "02030000020101",
+        "payloadType": "str",
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "ac86a445b9b40a2e"
+            ]
+        ],
+        "icon": "font-awesome/fa-sign-in"
+    },
+    {
+        "id": "a78b712539dc33a8",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "018. INPUT: Video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "02030000020106",
+        "payloadType": "str",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "ac86a445b9b40a2e"
+            ]
+        ],
+        "icon": "font-awesome/fa-sign-in"
+    },
+    {
+        "id": "2f5b843ee628b799",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "018. INPUT: S-Video",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0203000002010b",
+        "payloadType": "str",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "ac86a445b9b40a2e"
+            ]
+        ],
+        "icon": "font-awesome/fa-sign-in"
+    },
+    {
+        "id": "7682074208aeecfa",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "018. INPUT: COMPONENT",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "02030000020110",
+        "payloadType": "str",
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "ac86a445b9b40a2e"
+            ]
+        ],
+        "icon": "font-awesome/fa-sign-in"
+    },
+    {
+        "id": "84936476445e45b3",
+        "type": "debug",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "RECEIVE from HT1100",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "da32f508b95a0455",
+        "type": "function",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "BINARY to HEX",
+        "func": "let cks = 0;\nlet buffer = Buffer.from(msg.payload,'hex');\nlet conversion = \"\";\nlet i = 0;\n\n// Convert to readable NEC Hexa format identical to the manual\nfor (i = 0; i < buffer.length - 1; i++) {\n    // final space will be removed at the end\n    conversion += buffer[i].toString(16).padStart(2,'0').toUpperCase() + \"H \";\n    cks += buffer[i];\n  }\n\n// Checksum recomputation for safety\nlet checksum = cks % 256;\n\nmsg.checksum_expected = \"0x\" + checksum.toString(16).padStart(2,'0');\nmsg.checksum_received = \"0x\" + buffer[i].toString(16).padStart(2,'0');\n\nif(checksum == buffer[i]) {\n    msg.checksum = \"CORRECT\";\n}\nelse {\n    msg.checksum_status = \"WRONG\";\n}\n\n// ACK or NAK\n// First byte in 2* is success (0010****b)\n// First byte in A* is failure (1010****b)\n// Masking on the first 2 bits = 11000000b = 0xc0\nlet response = buffer[0] & 0xc0;\n\nswitch(response)\n{\n    case 0x00:\n    msg.response = \"ACK\";\n    break;\n\n    case 0x80:\n    msg.response = \"NAK\";\n    break;\n}\n\nmsg.ascii = conversion.slice(0, -1);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "84936476445e45b3",
+                "7db2e4bd4159ddd0"
+            ]
+        ]
+    },
+    {
+        "id": "28153472e3cb9acb",
+        "type": "tcp request",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "TCP Send",
+        "server": "192.168.10.240",
+        "port": "4005",
+        "out": "time",
+        "ret": "buffer",
+        "splitc": " 500",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 1450,
+        "y": 80,
+        "wires": [
+            [
+                "9128d53df6cde90f"
+            ]
+        ]
+    },
+    {
+        "id": "d67f803a82c5fd7b",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "006. Running Sense",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0081000000",
+        "payloadType": "str",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "92a5e440c94eccc8"
+            ]
+        ],
+        "icon": "font-awesome/fa-heartbeat"
+    },
+    {
+        "id": "8491453d7489b106",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "007. Common Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "00c0000000",
+        "payloadType": "str",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "8392f404809929d9"
+            ]
+        ],
+        "icon": "font-awesome/fa-list-alt"
+    },
+    {
+        "id": "92a5e440c94eccc8",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: running_sense",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "6",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "b9161f5d3523c7cd",
+        "type": "switch",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "ACK (OK)",
+        "property": "command",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "9",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "18",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "37",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0371",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0372",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "38",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "39",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "77",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0781",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0782",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0783",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0784",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0785",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "79",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "15",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "16",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "20",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "21",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "22",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "23",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "24",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "25",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 25,
+        "x": 960,
+        "y": 640,
+        "wires": [
+            [
+                "154f555ddf1619a4"
+            ],
+            [
+                "ce2a8ca2b747b507"
+            ],
+            [
+                "3421ac33b4267bdd"
+            ],
+            [
+                "0b34cd0a6fd39d07"
+            ],
+            [
+                "3cd05a6f8eca644c"
+            ],
+            [
+                "f137b01685750345"
+            ],
+            [
+                "f2f7203637cb03f7"
+            ],
+            [
+                "ca5f2df50ff102db"
+            ],
+            [
+                "a48f79560ee4934c"
+            ],
+            [
+                "37ac654a770989a2"
+            ],
+            [
+                "49258cd0033b9fad"
+            ],
+            [
+                "02121d6cc8d24dc6"
+            ],
+            [
+                "22992defcc853ea7"
+            ],
+            [
+                "9b676268e90e6e84"
+            ],
+            [
+                "eb6e3d40621e9d26"
+            ],
+            [
+                "8f5e0fca1c693055"
+            ],
+            [
+                "4de3aed92e2693de"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ],
+            [
+                "de41ae2e7fb2a334"
+            ]
+        ],
+        "icon": "font-awesome/fa-sort-numeric-asc"
+    },
+    {
+        "id": "154f555ddf1619a4",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "006",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8{b1 => Power_ON_OFF_Processing, b1 => Selecting_Signal_Processing, b1 => Cooling_Processing, b1 => External_Control_Mode, b1 => No_Power_Off_Period, x1, b1 => Projector_Status, x1},\nx8",
+        "x": 1190,
+        "y": 260,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "f8ae1ff09c675bdb",
+        "type": "debug",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "ACK DECODING",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "368db94fd4d9f9f9",
+        "type": "link in",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100  BINARY IN",
+        "links": [
+            "9128d53df6cde90f"
+        ],
+        "x": 665,
+        "y": 160,
+        "wires": [
+            [
+                "da32f508b95a0455"
+            ]
+        ]
+    },
+    {
+        "id": "9128d53df6cde90f",
+        "type": "link out",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100 BINARY OUT",
+        "mode": "link",
+        "links": [
+            "368db94fd4d9f9f9"
+        ],
+        "x": 1555,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ce2a8ca2b747b507",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "007",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_PJ_Type,\nb8 => DATA02_PJ_ID,\nx8,\nb8 => DATA04_PJ_Status,\nb8 => DATA05_Cooling,\nb8 => DATA06_Signal_Number,\nb8 => DATA07_Input_Terminal_Type_1,\nb8 => DATA08_Input_Terminal_Type_2,\nb8 => DATA09_Indication_Signal_Type,\nx24,\nb8[8]|str('ascii') => DATA13_20_Hz_Freq_kHz,\nb8[8]|str('ascii') => DATA21_28_Vt_Freq_Hz,\nb8 => DATA29_Picture_Mute,\nb8 => DATA30_Sound_Mute,\nx8,\nb8 => DATA32_Freeze_Status,\nb8 => DATA33_Test_Pattern_1,\nb8 => DATA34_Test_Pattern_2,\nx128,\nb8[15] => DATA51_65_User,\nb8 => DATA66_Forced_On_Screen_Mute,\nb8 => DATA67_On_Screen_Display,\nb8 => DATA68_Signal_Processing,\nb8 => DATA69_Status,\nb8[2] => DATA70_71_PJ_Type,\nb8 => DATA72_PCMCIA_Present,\nb8 => DATA73_USBMOUSE_Present,\nb8 => DATA74_Entry_List_Type,\nx64,\nb8 => DATA83_On_Screen_Mute,\nx8,\nb8 => DATA85_Contents,\nx344,\nx8",
+        "x": 1190,
+        "y": 300,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "8392f404809929d9",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: common_data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "7",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "a6a54c59ba63d4d7",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: power_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "15",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "c7fa966e34b61b27",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: power_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "15",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "de41ae2e7fb2a334",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "No ACK Data",
+        "property": "payload",
+        "pattern": "b8[4] => HEADER,\nb8 => STATUS",
+        "x": 1220,
+        "y": 940,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "2335102f40bc9811",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "009. Error Status",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0088000000",
+        "payloadType": "str",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "415b9fd63bbf13c5"
+            ]
+        ],
+        "icon": "font-awesome/fa-warning"
+    },
+    {
+        "id": "415b9fd63bbf13c5",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: error_status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "9",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "3421ac33b4267bdd",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "009",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_Error_Status_1,\nb8 => DATA02_Error_Status_2,\nb8 => DATA03_Error_Status_3,\nb8 => DATA04_Error_Status_4",
+        "x": 1190,
+        "y": 340,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "0b34cd0a6fd39d07",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "018",
+        "property": "payload",
+        "pattern": "b8[4] => HEADER,\nb8 => STATUS,\nb8 => DATA01,\nx8",
+        "x": 1190,
+        "y": 380,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "ac86a445b9b40a2e",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: input_sw_change",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "18",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 280,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "564cae8e599e1c6b",
+        "type": "switch",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "ACK/NAK",
+        "property": "response",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ACK",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "NAK",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 780,
+        "y": 660,
+        "wires": [
+            [
+                "b9161f5d3523c7cd"
+            ],
+            [
+                "9c702c384a597543"
+            ]
+        ]
+    },
+    {
+        "id": "9c702c384a597543",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "NAK (error)",
+        "property": "payload",
+        "pattern": "b8[4] => HEADER,\nb8 => STATUS_ERROR,\nb8 => DATA01_Error_Type,\nb8 => DATA02_Error_Description,\nx8",
+        "x": 970,
+        "y": 980,
+        "wires": [
+            [
+                "afb84e41eb947bd6"
+            ]
+        ]
+    },
+    {
+        "id": "d8c571920e92b250",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "020. Picture Mute ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0210000000",
+        "payloadType": "str",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "edee8ef375656d6c"
+            ]
+        ]
+    },
+    {
+        "id": "edee8ef375656d6c",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: picture_mute_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "20",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "b874ab9eecb3cf99",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "021. Picture Mute OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0211000000",
+        "payloadType": "str",
+        "x": 160,
+        "y": 520,
+        "wires": [
+            [
+                "54f2de9335669272"
+            ]
+        ]
+    },
+    {
+        "id": "54f2de9335669272",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: picture_mute_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "21",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "e96eb8edf1f5d973",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "022. Sound Mute ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0212000000",
+        "payloadType": "str",
+        "x": 160,
+        "y": 560,
+        "wires": [
+            [
+                "149f6de4b2cd6173"
+            ]
+        ],
+        "icon": "font-awesome/fa-volume-off"
+    },
+    {
+        "id": "149f6de4b2cd6173",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: sound_mute_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "22",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "e3484f9183d42e46",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "023. Sound Mute OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0213000000",
+        "payloadType": "str",
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "79e120d11cfbedb5"
+            ]
+        ],
+        "icon": "font-awesome/fa-volume-up"
+    },
+    {
+        "id": "79e120d11cfbedb5",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: sound_mute_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "23",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "2c21f12f76ba531e",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "024. On-Screen Mute ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0214000000",
+        "payloadType": "str",
+        "x": 170,
+        "y": 640,
+        "wires": [
+            [
+                "fddbdd07c81237fc"
+            ]
+        ],
+        "icon": "font-awesome/fa-eye-slash"
+    },
+    {
+        "id": "fddbdd07c81237fc",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: onscreen_mute_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "24",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 640,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "aa22a23895828a2b",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "025. On-Screen Mute OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0215000000",
+        "payloadType": "str",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            [
+                "54149595ebf6385e"
+            ]
+        ],
+        "icon": "font-awesome/fa-eye"
+    },
+    {
+        "id": "54149595ebf6385e",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: onscreen_mute_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "25",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "666083137e37bdd7",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "030. Gain Adjust",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0310000005xxxxxxxxxx",
+        "payloadType": "str",
+        "x": 140,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f8206aa10473497",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "030-2. Volume Adjust",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0310000005xxxxxxxxxx",
+        "payloadType": "str",
+        "x": 160,
+        "y": 760,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-volume-down"
+    },
+    {
+        "id": "efc08537eaed4f0e",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "030-12. Aspect Ratio Input",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0310000005xxxxxxxxxx",
+        "payloadType": "str",
+        "x": 170,
+        "y": 800,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-tv"
+    },
+    {
+        "id": "4bf9ed26a186c40c",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: information_request",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "37",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 840,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "3cd05a6f8eca644c",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8[49]|str('ascii') => DATA01_19_PJ_Name,\nx264,\nl32 => DATA83_86_Lamp_Hour_Meter,\nl32 => DATA87_90_Filter_Usage,\nl32 => DATA91_94_Panel_Usage,\nl32 => DATA95_96_Projector_Usage,\nx8",
+        "x": 1190,
+        "y": 420,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "8fe7313cad33420e",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "038. Lamp Mode",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "03b000000107",
+        "payloadType": "str",
+        "x": 140,
+        "y": 1000,
+        "wires": [
+            [
+                "4c3d3ec7581b6063"
+            ]
+        ]
+    },
+    {
+        "id": "4c3d3ec7581b6063",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: lamp_mode",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "38",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1000,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "ca5f2df50ff102db",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "038",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nx8,\nb8 => DATA02_Lamp_Mode,\nx8",
+        "x": 1190,
+        "y": 540,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "a4bc58d342f3da41",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "039. LAMP MODE: Normal",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "03b10000020700",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1040,
+        "wires": [
+            [
+                "2acc573b7801161a"
+            ]
+        ],
+        "icon": "font-awesome/fa-sun-o"
+    },
+    {
+        "id": "a6487031ac3a6d10",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "039. LAMP MODE: Eco",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "03b10000020701",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1080,
+        "wires": [
+            [
+                "2acc573b7801161a"
+            ]
+        ],
+        "icon": "font-awesome/fa-recycle"
+    },
+    {
+        "id": "2acc573b7801161a",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: lamp_mode_set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "39",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1040,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "a48f79560ee4934c",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "039",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nx8,\nb8 => DATA02_Result,\nx8",
+        "x": 1190,
+        "y": 580,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "89ba19aabeb628cb",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: input_status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0783",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1480,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "9b676268e90e6e84",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-3",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_Select_Signal_Processing,\nb8 => DATA02_Signal_Number,\nb8[2] => DATA03_04_Selected_Input_Terminal,\nb8 => DATA05_Entry_List_Type,\nb8 => DATA06_Test_Pattern,\nx16,\nb8 => DATA09_Contents",
+        "x": 1190,
+        "y": 780,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "dc13b1feddd2d967",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-5. Model Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "008500000104",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1560,
+        "wires": [
+            [
+                "5beb25132336a818"
+            ]
+        ],
+        "icon": "font-awesome/fa-file-text"
+    },
+    {
+        "id": "8f5e0fca1c693055",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-5",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8[32]z|str('ascii') => DATA01_32_Model_Name",
+        "x": 1190,
+        "y": 860,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "5beb25132336a818",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: model_name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0785",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1560,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "642b2d162c3758d9",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-1. Setting Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "008500000100",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1400,
+        "wires": [
+            [
+                "04bfc6f8be730967"
+            ]
+        ]
+    },
+    {
+        "id": "04bfc6f8be730967",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: setting_request",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0781",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1400,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "02121d6cc8d24dc6",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-1",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8[3] => DATA01_03_Projector_Type,\nb8 => DATA04_Sound_Available,\nb8 => DATA05_Calendar_Function",
+        "x": 1190,
+        "y": 700,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "7db2e4bd4159ddd0",
+        "type": "link out",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100 PROCESS Response OUT",
+        "mode": "link",
+        "links": [
+            "6f8bf4bfafe055ac"
+        ],
+        "x": 1555,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6f8bf4bfafe055ac",
+        "type": "link in",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100 PROCESS Response IN",
+        "links": [
+            "7db2e4bd4159ddd0"
+        ],
+        "x": 675,
+        "y": 660,
+        "wires": [
+            [
+                "564cae8e599e1c6b"
+            ]
+        ]
+    },
+    {
+        "id": "931c4b2cbcdab18f",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: running_status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0782",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1440,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "22992defcc853ea7",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-2",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nx16,\nb8 => DATA03_Projector_Status,\nb8 => DATA04_Cooling_Processing,\nb8 => DATA05_Power_ON_OFF_Processing,\nb8 => DATA06_Operation_Status,\nb8 => DATA07_PCCard_Present,\nb8 => DATA08_USBMouse_Present",
+        "x": 1190,
+        "y": 740,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "befd1878a03f7aee",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037-1. Lamp Information 1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "038c0000008f",
+        "payloadType": "str",
+        "x": 170,
+        "y": 880,
+        "wires": [
+            [
+                "f41e5e234826ebcb"
+            ]
+        ],
+        "icon": "font-awesome/fa-lightbulb-o"
+    },
+    {
+        "id": "ce59efcf27336fdb",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037-2. Lamp Information 2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "039400000097",
+        "payloadType": "str",
+        "x": 170,
+        "y": 920,
+        "wires": [
+            [
+                "bc76aac2fe0fdad0"
+            ]
+        ],
+        "icon": "font-awesome/fa-lightbulb-o"
+    },
+    {
+        "id": "a1700c59bfc51433",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037-3. Lamp Information 3",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "039600000200xx",
+        "payloadType": "str",
+        "x": 170,
+        "y": 960,
+        "wires": [
+            [
+                "8d713e92afdba136"
+            ]
+        ],
+        "icon": "font-awesome/fa-lightbulb-o"
+    },
+    {
+        "id": "5709afc4679c64f2",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "name": "POWER",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020100",
+        "payloadType": "str",
+        "x": 800,
+        "y": 1120,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-power-off"
+    },
+    {
+        "id": "87b5ca6bc72987d5",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "060. Gain Parameter Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0310000005xxxxxxxxxx",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a10645485fd7155",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077. Mute Picture ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "021a0000020001",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1160,
+        "wires": [
+            [
+                "4e498a7ae72f958e"
+            ]
+        ]
+    },
+    {
+        "id": "db0719b0d5c711e0",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-4. Mute Status",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "008500000103",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1520,
+        "wires": [
+            [
+                "d5ada98cdb8ae252"
+            ]
+        ]
+    },
+    {
+        "id": "a5cbc47662bcad30",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "079. Freeze Start",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "019800000101",
+        "payloadType": "str",
+        "x": 140,
+        "y": 1600,
+        "wires": [
+            [
+                "01193382aa227638"
+            ]
+        ],
+        "icon": "font-awesome/fa-snowflake-o"
+    },
+    {
+        "id": "93ddb648e3518701",
+        "type": "comment",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "name": "050. Remote Keys",
+        "info": "",
+        "x": 810,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "c3627ba34f712854",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "name": "POWER ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020200",
+        "payloadType": "str",
+        "x": 1170,
+        "y": 1120,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-toggle-on"
+    },
+    {
+        "id": "3c2b8f1e2bab10ca",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "name": "POWER OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020300",
+        "payloadType": "str",
+        "x": 1170,
+        "y": 1160,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-toggle-off"
+    },
+    {
+        "id": "eb75228dfccd9f19",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "b7c3fd6494edd82d",
+        "name": "SOURCE (AUTO)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020400",
+        "payloadType": "str",
+        "x": 830,
+        "y": 1160,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-sign-in"
+    },
+    {
+        "id": "88426c38250a1f7c",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "AUTO",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020500",
+        "payloadType": "str",
+        "x": 1150,
+        "y": 1680,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ]
+    },
+    {
+        "id": "63aa1e2dd7ee492a",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "ASPECT",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f000002a300",
+        "payloadType": "str",
+        "x": 800,
+        "y": 1680,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-film"
+    },
+    {
+        "id": "1ee937940eae8e4a",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "UP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020700",
+        "payloadType": "str",
+        "x": 990,
+        "y": 1400,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-chevron-up"
+    },
+    {
+        "id": "2f129524c18a3e5a",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "DOWN",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020800",
+        "payloadType": "str",
+        "x": 990,
+        "y": 1520,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-chevron-down"
+    },
+    {
+        "id": "2d4c234fbbff4737",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "MENU",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020600",
+        "payloadType": "str",
+        "x": 850,
+        "y": 1560,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-navicon"
+    },
+    {
+        "id": "c236761382a99dff",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "LEFT",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020a00",
+        "payloadType": "str",
+        "x": 850,
+        "y": 1460,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-chevron-left"
+    },
+    {
+        "id": "96d256cc3eefada0",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "RIGHT",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020900",
+        "payloadType": "str",
+        "x": 1130,
+        "y": 1460,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-chevron-right"
+    },
+    {
+        "id": "608ed2cc7a961685",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "ENTER",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020b00",
+        "payloadType": "str",
+        "x": 990,
+        "y": 1460,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-mail-forward"
+    },
+    {
+        "id": "991958bea24afce2",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "45196c3a46246e5f",
+        "name": "CANCEL",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020c00",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 1560,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-remove"
+    },
+    {
+        "id": "7092467f0c0b4e75",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "HELP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020d00",
+        "payloadType": "str",
+        "x": 1150,
+        "y": 1860,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-support"
+    },
+    {
+        "id": "ab24b89d0bf226c2",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "MAGN UP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000020f00",
+        "payloadType": "str",
+        "x": 980,
+        "y": 1800,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-plus"
+    },
+    {
+        "id": "27e0059c4383b213",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "MAGN DOWN",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000021000",
+        "payloadType": "str",
+        "x": 990,
+        "y": 1860,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-minus"
+    },
+    {
+        "id": "b390841b8b218963",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "PICTURE",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000022900",
+        "payloadType": "str",
+        "x": 980,
+        "y": 1680,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-picture-o"
+    },
+    {
+        "id": "6c77a21b46fb2286",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "f97863f660e0c19b",
+        "name": "DVI",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f000002e400",
+        "payloadType": "str",
+        "x": 1190,
+        "y": 1300,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "node-red/serial.svg"
+    },
+    {
+        "id": "216a1968e8861953",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "MUTE",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000021300",
+        "payloadType": "str",
+        "x": 790,
+        "y": 1740,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-volume-off"
+    },
+    {
+        "id": "295575193e5c21bb",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "FREEZE",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000028a00",
+        "payloadType": "str",
+        "x": 980,
+        "y": 1740,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-snowflake-o"
+    },
+    {
+        "id": "c5b7e44d345f139d",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "f97863f660e0c19b",
+        "name": "VIDEO",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000024f00",
+        "payloadType": "str",
+        "x": 790,
+        "y": 1240,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "node-red/status.svg"
+    },
+    {
+        "id": "67a4599a66d29e33",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "f97863f660e0c19b",
+        "name": "S-VIDEO",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000025100",
+        "payloadType": "str",
+        "x": 1000,
+        "y": 1240,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-random"
+    },
+    {
+        "id": "dda5bd36615aba10",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "POS UP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f000002e200",
+        "payloadType": "str",
+        "x": 800,
+        "y": 1800,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-long-arrow-up"
+    },
+    {
+        "id": "7349e181d95d1d84",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "POS DOWN",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f000002e300",
+        "payloadType": "str",
+        "x": 810,
+        "y": 1860,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-long-arrow-down"
+    },
+    {
+        "id": "3404896df81586db",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "2589666f18fc4ace",
+        "name": "3D REFORM",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f000002d600",
+        "payloadType": "str",
+        "x": 1170,
+        "y": 1800,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-diamond"
+    },
+    {
+        "id": "f7a1f4a89a34a9e9",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "f97863f660e0c19b",
+        "name": "COMPUTER",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f000002d800",
+        "payloadType": "str",
+        "x": 810,
+        "y": 1300,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-laptop"
+    },
+    {
+        "id": "3204eee1be19d9d0",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "g": "f97863f660e0c19b",
+        "name": "RGB",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "020f0000024b00",
+        "payloadType": "str",
+        "x": 1190,
+        "y": 1240,
+        "wires": [
+            [
+                "af332f6f18ef388c"
+            ]
+        ],
+        "icon": "font-awesome/fa-navicon"
+    },
+    {
+        "id": "af332f6f18ef388c",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: remote_key",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "50",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1430,
+        "y": 1460,
+        "wires": [
+            [
+                "4b0bc63aba155f8c"
+            ]
+        ]
+    },
+    {
+        "id": "4b0bc63aba155f8c",
+        "type": "link out",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100 Remote OUT",
+        "mode": "link",
+        "links": [
+            "bdb55877fa6705a7"
+        ],
+        "x": 1555,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "bdb55877fa6705a7",
+        "type": "link in",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "HT1100 Remote IN",
+        "links": [
+            "4b0bc63aba155f8c"
+        ],
+        "x": 615,
+        "y": 40,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "37ac654a770989a2",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "050",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_Result",
+        "x": 1190,
+        "y": 620,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "97f36701defb700d",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "079. Freeze Stop",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "019800000102",
+        "payloadType": "str",
+        "x": 140,
+        "y": 1640,
+        "wires": [
+            [
+                "01193382aa227638"
+            ]
+        ],
+        "icon": "font-awesome/fa-sun-o"
+    },
+    {
+        "id": "01193382aa227638",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: freeze_control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "79",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1600,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "4de3aed92e2693de",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "079",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_Result",
+        "x": 1190,
+        "y": 900,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "d5ada98cdb8ae252",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: mute_status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0784",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1520,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "eb6e3d40621e9d26",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "078-4",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_Picture_Mute,\nb8 => DATA02_Sound_Mute,\nb8 => DATA03_On_Screen_Mute,\nb8 => DATA04_Forced_On_Screen_Mute,\nb8 => DATA05_On_Screen_Display",
+        "x": 1190,
+        "y": 820,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "f41e5e234826ebcb",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: lamp_information_1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0371",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 880,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "bc76aac2fe0fdad0",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: lamp_information_2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0372",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 920,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "8d713e92afdba136",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: lamp_information_3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "0373",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 960,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "f137b01685750345",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037-1",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nl32 => DATA01_04_Lamp_Hour_Meter,\nx32,\nl32 => DATA09_12_Lamp_Use_Warning_Time,\nl32 => DATA13_16_Lamp_Use_Prohibited_Time\n",
+        "x": 1190,
+        "y": 460,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "f2f7203637cb03f7",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "037-2",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nx32,\nb8 => DATA05_Lamp_Remaining_Percent\n\n",
+        "x": 1190,
+        "y": 500,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "0db46a9f0331809f",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077. Mute Picture OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "021a0000020000",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1200,
+        "wires": [
+            [
+                "4e498a7ae72f958e"
+            ]
+        ]
+    },
+    {
+        "id": "4e498a7ae72f958e",
+        "type": "change",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "flow: mute_control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "77",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1160,
+        "wires": [
+            [
+                "52aab9bea62607c4"
+            ]
+        ]
+    },
+    {
+        "id": "49258cd0033b9fad",
+        "type": "binary",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077",
+        "property": "payload",
+        "pattern": "b8[5] => HEADER,\nb8 => DATA01_Result\n\n",
+        "x": 1190,
+        "y": 660,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    },
+    {
+        "id": "60e3a330d8c0ca8d",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077. Mute Sound ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "021a0000020101",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1240,
+        "wires": [
+            [
+                "4e498a7ae72f958e"
+            ]
+        ]
+    },
+    {
+        "id": "b3918dbb855c871d",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077. Mute Sound OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "021a0000020100",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1280,
+        "wires": [
+            [
+                "4e498a7ae72f958e"
+            ]
+        ]
+    },
+    {
+        "id": "f960ca42894df9eb",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077. Mute On-Screen ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "021a0000020201",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1320,
+        "wires": [
+            [
+                "4e498a7ae72f958e"
+            ]
+        ]
+    },
+    {
+        "id": "d63156c71ccee6fa",
+        "type": "inject",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "077. Mute On-Screen OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "021a0000020200",
+        "payloadType": "str",
+        "x": 170,
+        "y": 1360,
+        "wires": [
+            [
+                "4e498a7ae72f958e"
+            ]
+        ]
+    },
+    {
+        "id": "afb84e41eb947bd6",
+        "type": "function",
+        "z": "cb95f56d5a0ad2b7",
+        "name": "NAK Error List",
+        "func": "switch(msg.payload.DATA01_Error_Type)\n{\n    case 0x0:\n    msg.payload.DATA01_Error_Type_Txt = \"Not supported\";\n    switch(msg.payload.DATA02_Error_Description)\n    {\n        case 0x0:\n            msg.payload.DATA02_Error_Description_Txt = \"Unknown command\";\n            break;\n        case 0x1:\n            msg.payload.DATA02_Error_Description_Txt = \"The current model does not support this function\";\n            break;\n        case 0x2:\n            msg.payload.DATA02_Error_Description_Txt = \"This model is not compatible with the Switcher\";\n            break;\n        case 0x3:\n            msg.payload.DATA02_Error_Description_Txt = \"This model is not compatible with the PC Viewer\";\n            break;\n    }\n    break;\n    case 0x1:\n    msg.payload.DATA01_Error_Type_Txt = \"Parameter error\";\n    switch(msg.payload.DATA02_Error_Description)\n    {\n        case 0x0:\n            msg.payload.DATA02_Error_Description_Txt = \"Unvalid values specified\";\n            break;\n        case 0x1:\n            msg.payload.DATA02_Error_Description_Txt = \"Specified terminal is unavailable or cannot be selected\";\n            break;\n        case 0x2:\n            msg.payload.DATA02_Error_Description_Txt = \"Selected language is not available\";\n            break;\n    }\n    break;\n    case 0x2:\n    msg.payload.DATA01_Error_Type_Txt = \"Operation mode error\";\n    switch (msg.payload.DATA02_Error_Description)\n    {\n        case 0x0:\n            msg.payload.DATA02_Error_Description_Txt = \"Available memory reservation error\";\n            break;\n        case 0x1:\n            msg.payload.DATA02_Error_Description_Txt = \"External control working\";\n            break;\n        case 0x2:\n            msg.payload.DATA02_Error_Description_Txt = \"Operating memory\";\n            break;\n        case 0x3:\n            msg.payload.DATA02_Error_Description_Txt = \"Standby\";\n            break;\n        case 0x4:\n            msg.payload.DATA02_Error_Description_Txt = \"On Forced on-screen mute mode\";\n            break;\n        case 0x5:\n            msg.payload.DATA02_Error_Description_Txt = \"Link mode working\";\n            break;\n        case 0x6:\n            msg.payload.DATA02_Error_Description_Txt = \"Displaying a signal other than PC Viewer\";\n            break;\n        case 0x7:\n            msg.payload.DATA02_Error_Description_Txt = \"- No Signal -\";\n            break;\n        case 0x8:\n            msg.payload.DATA02_Error_Description_Txt = \"Displaying a test pattern of PC Card Files screen\";\n            break;\n        case 0x9:\n            msg.payload.DATA02_Error_Description_Txt = \"No PC Card is inserted\";\n            break;\n        case 0xa:\n            msg.payload.DATA02_Error_Description_Txt = \"Memory operation failed\";\n            break;\n        case 0xb:\n            msg.payload.DATA02_Error_Description_Txt = \"Switcher mode working\";\n            break;\n        case 0xc:\n            msg.payload.DATA02_Error_Description_Txt = \"Displaying the Entry List\";\n            break;\n    } \n    break;\n    case 0x3:\n    msg.payload.DATA01_Error_Type_Txt = \"Gain-related error\";\n    switch (msg.payload.DATA02_Error_Description) {\n        case 0x0:\n            msg.payload.DATA02_Error_Description_Txt = \"Group number / sub category number is not correct\";\n            break;\n        case 0x1:\n            msg.payload.DATA02_Error_Description_Txt = \"Selected gain is not available\";\n            break;\n        case 0x2:\n            msg.payload.DATA02_Error_Description_Txt = \"Adjustment failed\";\n            break;\n        }\n    break;\n    case 0x4:\n    msg.payload.DATA01_Error_Type_Txt = \":pgp transfer error\";\n    switch (msg.payload.DATA02_Error_Description) {\n        case 0x0:\n            msg.payload.DATA02_Error_Description_Txt = \"Start is not requested\";\n            break;\n        case 0x1:\n            msg.payload.DATA02_Error_Description_Txt = \"Cannot process due to storing\";\n            break;\n        case 0x2:\n            msg.payload.DATA02_Error_Description_Txt = \"Exceeds the total number of blocks required\";\n            break;\n    }\n    break;\n\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 980,
+        "wires": [
+            [
+                "f8ae1ff09c675bdb"
+            ]
+        ]
+    }
+]
